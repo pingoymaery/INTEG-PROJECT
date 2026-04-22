@@ -47,7 +47,7 @@ header {
     width: 100%;
     z-index: 1000;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 5px solid var(--border-subtle);
     box-shadow: 0 2px 20px rgba(0,0,0,0.5);
 }
 
@@ -152,7 +152,8 @@ nav a.cart:hover {
 .page-header h1 {
     font-size: 28px;
     font-weight: bold;
-    color: #1a1a1a;
+    color: whitesmoke;
+    margin-top: 50px;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
@@ -174,36 +175,37 @@ nav a.cart:hover {
 .category-btn {
     padding: 10px 20px;
     border-radius: 25px;
-    border: 1px solid #ddd;
-    background: white;
+    border: 1px solid white;
+    background: whitesmoke;
     cursor: pointer;
     font-size: 13px;
     transition: all 0.3s;
 }
 
 .category-btn:hover {
-    background: #f0f0f0;
+    background: #334155;
+    color: #f0f0f0;
 }
 
 .category-btn.primary {
-    background: #1a1a1a;
+    background-color: #334155;
     color: white;
-    border-color: #1a1a1a;
+    border: 1px solid #475569;
 }
 
 .category-btn.active {
-    background: #1a1a1a;
+    background-color: #334155;
     color: white;
-    border-color: #1a1a1a;
+    border: 1px solid #475569;
 }
 
 .scroll-btn {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: #1a1a1a;
-    color: white;
-    border: none;
+    background: #334155;
+    color: #f0f0f0;
+    border: 1px solid #475569;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -220,7 +222,9 @@ nav a.cart:hover {
 /* Featured Card (Large) */
 .featured-card {
     grid-row: span 2;
-    background: #f8f8f8;
+    background-color: #334155; /* Cool Slate Blue */
+    color: #FFFFFF;
+    border: 1px solid #475569;
     border-radius: 15px;
     padding: 30px;
     display: flex;
@@ -231,13 +235,13 @@ nav a.cart:hover {
 .featured-card h2 {
     font-size: 32px;
     font-weight: bold;
-    color: #1a1a1a;
+    color: #FFFFFF;
     line-height: 1.2;
     margin-bottom: 15px;
 }
 
 .featured-card p {
-    color: #666;
+    color: #FFFFFF;
     font-size: 14px;
     margin-bottom: 25px;
 }
@@ -258,12 +262,13 @@ nav a.cart:hover {
 }
 
 .add-cart-btn:hover {
-    background: #333;
+    background: #f0f0f0;
 }
 
 /* Regular Car Card */
 .car-card {
-    background: white;
+    background-color: white; 
+    color: #1a1a1a;
     border-radius: 15px;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
