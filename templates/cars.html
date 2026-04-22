@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click2Drive | Products</title>
+    <link href="{{ url_for('static', filename='css/cars.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+     <header>
+        <div class="header-container">
+            <h1 class="logo">Click2Drive</h1>
+            <nav>
+                <a href="{{url_for('home')}}">Home</a>
+                <a href="{{url_for('cars')}}" class="active-nav">Cars</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="sign_up.html">Sign Up</a>
+                <input type="text" placeholder="Search here..." class="search-bar">
+                <a class="cart" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>POPULAR PERFORMANCE CATEGORIES</h1>
+            <p>Precision and Performance in One.</p>
+        </div>
+        <!-- Category Filters -->
+        <div class="category-filters">
+            <button class="category-btn primary">CATEGORIES</button>
+            <button class="category-btn active">SUVs</button>
+            <button class="category-btn">Sedans</button>
+            <button class="category-btn">Pickup Trucks</button>
+            <button class="category-btn">Sports Cars</button>
+            <button class="category-btn">MPVs / Family Vans</button>
+            <button class="category-btn">Electric Vehicles (EVs)</button>
+            <button class="scroll-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="cars-grid">
+            <div class="featured-card">
+                <h2>ALL-NEW<br>CIVIC TYPE R</h2>
+                <p>Experience the legend.<br>Precision meets power.</p>
+                <button class="add-cart-btn">
+                    <span>+</span> Add to Cart
+                </button>
+            </div>
+            <!-- Car Cards Row 1 -->
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/Fortuner.png')}}"
+                    alt="Toyota Fortuner" class="car-image">
+                <h3>TOYOTA FORTUNER</h3>
+                <p class="price">₱1,775,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/Mitsubishi Montero Sport.png')}}"
+                    alt="Mitsubishi Montero Sport" class="car-image">
+                <h3>MITSUBISHI MONTERO SPORT</h3>
+                <p class="price">₱1,568,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/Ford Everest.png')}}"
+                    alt="Ford Everest" class="car-image">
+                <h3>FORD EVEREST</h3>
+                <p class="price">₱1,864,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <!-- Car Cards Row 2 -->
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/BAIC B30e Dune.png')}}"
+                    alt="BAIC B30e Dune" class="car-image">
+                <h3>BAIC B30e DUNE</h3>
+                <p class="price">₱1,599,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/Jaecoo EJ6.png')}}"
+                    alt="Jaecoo EJ6" class="car-image">
+                <h3>JAECOO EJ6</h3>
+                <p class="price">₱1,649,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/Suzuki Jimny 5-Door.png')}}"
+                    alt="Suzuki Jimny 5-Door" class="car-image">
+                <h3>SUZUKI JIMMY 5-DOOR</h3>
+                <p class="price">₱6,100,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/VinFast VF.png')}}"
+                    alt="VinFast VF" class="car-image">
+                <h3>VinFast VF</h3>
+                <p class="price">₱590,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/JETOUR T2.png')}}"
+                    alt="JETOUR T2" class="car-image">
+                <h3>JETOUR T2</h3>
+                <p class="price">₱2,498,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright-text">
+            &copy; 2026 Click2Drive Automotive Inc. All rights reserved. |
+            <a href="#">Privacy & Legal</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
