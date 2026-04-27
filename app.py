@@ -9,5 +9,9 @@ def home():
 def cars():
     return render_template('cars.html')
 
+@app.route('/CARS/FORTUNER')
+def fortuner():
+    return render_template('fortuner.html')
+
 if __name__=='__main__':
     app.run(debug='True')

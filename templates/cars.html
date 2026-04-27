@@ -9,8 +9,6 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
      <header>
         <div class="header-container">
             <h1 class="logo">Click2Drive</h1>
@@ -28,14 +26,11 @@
             </nav>
         </div>
     </header>
-    <!-- Main Content -->
     <main class="main-content">
-        <!-- Page Header -->
         <div class="page-header">
             <h1>POPULAR PERFORMANCE CATEGORIES</h1>
             <p>Precision and Performance in One.</p>
         </div>
-        <!-- Category Filters -->
         <div class="category-filters">
             <button class="category-btn primary">CATEGORIES</button>
             <button class="category-btn active">SUVs</button>
@@ -49,19 +44,18 @@
         
         <div class="cars-grid">
             <div class="featured-card">
-                <h2>ALL-NEW<br>SUV LINEUP</h2>
+                <h2>ALL-NEW<br>SUV LINEUP 2026</h2>
                 <p>Discover the ultimate in luxury and capability. Where comfort meets adventure.</p>
                 <button class="add-cart-btn">
                     <span>+</span> Add to Cart
                 </button>
             </div>
-            <!-- Car Cards Row 1 -->
             <div class="car-card">
                 <img src="{{ url_for('static', filename='img/Fortuner.png')}}"
                     alt="Toyota Fortuner" class="car-image">
                 <h3>TOYOTA FORTUNER</h3>
                 <p class="price">₱1,775,000</p>
-                <a class="add-link">Explore</a>
+                <a href="{{url_for('fortuner')}}"  class="products">Explore</a>
             </div>
             <div class="car-card">
                 <img src="{{ url_for('static', filename='img/Mitsubishi Montero Sport.png')}}"
@@ -77,7 +71,6 @@
                 <p class="price">₱1,864,000</p>
                 <a class="add-link">Explore</a>
             </div>
-            <!-- Car Cards Row 2 -->
             <div class="car-card">
                 <img src="{{ url_for('static', filename='img/BAIC B30e Dune.png')}}"
                     alt="BAIC B30e Dune" class="car-image">
@@ -111,6 +104,20 @@
                     alt="JETOUR T2" class="car-image">
                 <h3>JETOUR T2</h3>
                 <p class="price">₱2,498,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/GAC AION V.png')}}"
+                    alt="GAC AION V" class="car-image">
+                <h3>GAC AION V</h3>
+                <p class="price">₱1,498,000</p>
+                <a class="add-link">Explore</a>
+            </div>
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='img/KIA SORENTO.png')}}"
+                    alt="Kia Sorento" class="car-image">
+                <h3>KIA SORENTO</h3>
+                <p class="price">₱2,188,000</p>
                 <a class="add-link">Explore</a>
             </div>
         </div>
