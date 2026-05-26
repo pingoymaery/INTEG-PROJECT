@@ -1,50 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click2Drive | Modern Automotive Experience</title>
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-</head>
+{% block content %}
 
-<body>
-    <header>
-        <div class="header-container">
-            <h1 class="logo">Click2Drive</h1>
-            <nav>
-                <a href="{{url_for('home')}}" class="active-nav">Home</a>
-                <a href="{{url_for('cars')}}">Cars</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="login.html">Login</a>
-                <a href="sign_up.html">Sign Up</a>
-                <input type="text" placeholder="Search here..." class="search-bar">
-                <a class="cart" href="cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </nav>
+<main>
+    <section class="first-section">
+        <div class="first-content">
+            <h2>The Future of Driving, Now.</h2>
+            <p>Explore our exclusive lineup of electric and high-performance vehicles, engineered for tomorrow.</p>
+            <a href="{{url_for('cars')}}" class="cta-button">Explore Models <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-    </header>
+        <div class="fisrt-overlay"></div>
+    </section>
 
-    <main>
-        <section class="first-section">
-            <div class="first-content">
-                <h2>The Future of Driving, Now.</h2>
-                <p>Explore our exclusive lineup of electric and high-performance vehicles, engineered for tomorrow.</p>
-                <a href="{{url_for('cars')}}" class="cta-button">Explore Models <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="fisrt-overlay"></div>
-        </section>
+</main>
 
-    </main>
-
-    <footer>
-        <p class="copyright-text">
-            &copy; 2026 Click2Drive Automotive Inc. All rights reserved. | <a href="#">Privacy & Legal</a>
-        </p>
-    </footer>
-
-</body>
-
-</html>
+{% endblock %}
